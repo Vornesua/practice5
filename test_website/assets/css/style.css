@@ -1,0 +1,40 @@
+#wbn-slider {
+  position: relative;
+  height: 50vw;
+  overflow: hidden;
+}
+
+.wbn-slide {
+  position: absolute;
+  width: 100%;
+  z-index: 500;
+  height: 50vw;
+}
+
+.wbn-slide img {
+  object-fit: cover;
+  width: 100%;
+  pointer-events: none;
+}
+
+.active {
+  z-index: 1000;
+}
+
+.slideInLeft {
+  animation-name: animateInLeft;
+  z-index: 1000;
+}
+
+.slideInRight {
+  animation-name: animateInRight;
+  z-index: 1000;
+}
+
+.slideOutLeft {
+  transform: translateX(-100%);
+}
+
+.slideOutRight {
+  transform: translateX(100%);
+}
